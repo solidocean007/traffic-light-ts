@@ -24,19 +24,19 @@ const FunctionalTrafficLight = () => {
       <div className="traffic-light">
         <div
           className={`circle ${lightState === "red" ? "red" : "black"}`}
-          id="red-light"
         ></div>
         <div
           className={`circle ${lightState === "yellow" ? "yellow" : "black"}`}
-          id="yellow-light"
         ></div>
         <div
           className={`circle ${lightState === "green" ? "green" : "black"}`}
-          id="green-light"
         ></div>
       </div>
 
-      <button className="next-state-button" onClick={() => setLightState(getNextLightState(lightState))}>
+      <button
+        className="next-state-button"
+        onClick={() => setLightState(getNextLightState(lightState))}
+      >
         Next State
       </button>
     </div>
