@@ -35,15 +35,12 @@ class ClassTrafficLight extends Component<{}, State> {
         <div className="traffic-light">
           <div
             className={`circle ${lightState === "red" ? "red" : "black"}`}
-            id="red-light"
           ></div>
           <div
             className={`circle ${lightState === "yellow" ? "yellow" : "black"}`}
-            id="yellow-light"
           ></div>
           <div
             className={`circle ${lightState === "green" ? "green" : "black"}`}
-            id="green-light"
           ></div>
         </div>
         <button className="next-state-button" onClick={() => this.setState({ lightState: this.getNextLightState(lightState) })}>
