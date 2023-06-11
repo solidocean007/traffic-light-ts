@@ -2,12 +2,14 @@ import { Component } from "react";
 
 type LightState = "red" | "yellow" | "green";
 
+interface Props {}
+
 interface State {
   lightState: LightState;
 }
 
-class ClassTrafficLight extends Component<{}, State> {
-  constructor(props: {}) {
+class ClassTrafficLight extends Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       lightState: "red"
@@ -52,3 +54,4 @@ class ClassTrafficLight extends Component<{}, State> {
 }
 
 export default ClassTrafficLight;
+
