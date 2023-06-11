@@ -2,7 +2,7 @@ import { Component } from "react";
 
 type LightState = "red" | "yellow" | "green";
 
-interface Props {}
+type Props = Record<string, never>;
 
 interface State {
   lightState: LightState;
